@@ -33,6 +33,7 @@ export default function Movies() {
 
                         {data.peliculas.map((movie, index) => {
                             return (
+                                // eslint-disable-next-line react/jsx-key
                                 <div className="col cardHover">
                                     <CardComponet key={index} titulo={movie.titulo} portada={movie.portada} sinopsis={movie.sinopsis} />
                                 </div>

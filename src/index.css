@@ -1,0 +1,33 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1818;
+    color: #e9e8e8;
+    font-size: 18px;
+}
+
+a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #e71e08;
+    margin: 10px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 10px;
+        font-size: 14px;
+    }
+}

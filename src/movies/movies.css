@@ -1,12 +1,23 @@
+:root {
+    --primary-color: #fb3c11;
+    --hover-scale: 1.1;
+}
+
 .titulo {
-    font-size: 30px;
-    color: red;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 .cardHover {
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
 }
 
 .cardHover:hover {
-    transform: scale(1.1);
+    transform: scale(var(--hover-scale));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
